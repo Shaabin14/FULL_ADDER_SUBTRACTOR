@@ -60,12 +60,22 @@ Write the detailed procedure here
 **Program:**
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
- module fulladder(a, b, cin, sum, carry); input a, b, cin; output sum, carry;
- assign sum = ( (a ^ b) ^ cin ); assign carry = ( (a & b) | ( cin & (a ^ b) ) ); endmodule
- module fullsub(a,b,bin,difference,borrow); input a,b,bin; output difference,borrow;
- assign difference = (a ^ b)^bin; assign borrow= ( a & b) | ( bin & ((a ^ b )));
+```
+ module fulladder(a, b, cin, sum, carry);
+ input a, b, cin;
+ output sum, carry;
+ assign sum = ( (a ^ b) ^ cin );
+ assign carry = ( (a & b) | ( cin & (a ^ b) ) );
  endmodule
- 
+```
+```
+ module fullsub(a,b,bin,difference,borrow);
+ input a,b,bin;
+ output difference,borrow;
+ assign difference = (a ^ b)^bin;
+ assign borrow = ( a & b) | ( bin & ((a ^ b )));
+ endmodule
+``` 
 Developed by:SHAABIN R S RegisterNumber:24006663*/
 
 **RTL Schematic**
